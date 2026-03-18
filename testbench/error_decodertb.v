@@ -9,8 +9,8 @@ module decoder_tb;
 ham_decoder DUT (data,enc_ham_data,pos_error,error);
   
   initial begin   
-    #2 enc_ham_data=7'b0010101;//error input at  7th position
-                             // please check console after run
+    #2 enc_ham_data=7'b0010101;
+                          
     #2 $display("output----data=%b, --pos_error=%d,--error=%b",   data,pos_error,error);
     
     #50 $stop; 
